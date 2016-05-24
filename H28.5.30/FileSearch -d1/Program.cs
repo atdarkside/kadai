@@ -1,4 +1,5 @@
 ﻿//Coder :TATa
+//ごり押し
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,6 @@ namespace FileSearch__d1 {
             string line;
             while(true) {
                 line = sr.ReadLine();
-                
                 int NO = new int();
                 
                 try {
@@ -31,7 +31,6 @@ namespace FileSearch__d1 {
                     break;
                 }
                 
-                
                 if(NO == searchNO) {
                     Console.WriteLine("┌─┬─────┬──────────┬─────┬───────────────┬───────┐");
                     Console.WriteLine("│NO│支店名    │よみがな            │郵便番号  │住所                          │電話番号      │");
@@ -40,12 +39,6 @@ namespace FileSearch__d1 {
                     Console.WriteLine("└─┴─────┴──────────┴─────┴───────────────┴───────┘");
                     break;
                 }
-                
-                /*
-                string str = line.Substring(1,2);
-                Console.WriteLine(str);
-                break;
-                */
             }
             Console.ReadKey();
         }
